@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:text="Title"
+        android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
         android:textAlignment="center"
@@ -30,7 +31,6 @@
         app:cornerRadius="22dp"
         android:text="Start"
         android:textColor="@color/black"
-        android:backgroundTint="#D3caca"
-        android:visibility="invisible"
+        android:backgroundTint="#9DF19D"
         />
 </LinearLayout>

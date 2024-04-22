@@ -55,12 +55,14 @@ public class BoardFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        BoardAdapter adapter = new BoardAdapter();
+        binding.viewPager2.setAdapter(adapter);
 
         requireActivity().getOnBackPressedDispatcher()
                 .addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
                     @Override
                     public void handleOnBackPressed() {
-                        requireActivity().finish();
+                        requireActivity().fileList();
                     }
                 });
     }
@@ -68,20 +70,20 @@ public class BoardFragment extends Fragment {
     private void changeColor() {
         if(binding.viewPager2.getCurrentItem() == 0 ){
 
-            binding.iv1.setImageResource(R.drawable.greenbg);
-            binding.iv2.setImageResource(R.drawable.graybg);
-            binding.iv3.setImageResource(R.drawable.graybg);
+            binding.iv1.setImageResource(R.drawable.green_bg);
+            binding.iv2.setImageResource(R.drawable.gray_bg);
+            binding.iv3.setImageResource(R.drawable.gray_bg);
         }else {
             if(binding.viewPager2.getCurrentItem() == 1){
 
-                binding.iv1.setImageResource(R.drawable.graybg);
-                binding.iv2.setImageResource(R.drawable.greenbg);
-                binding.iv3.setImageResource(R.drawable.graybg);
+                binding.iv1.setImageResource(R.drawable.gray_bg);
+                binding.iv2.setImageResource(R.drawable.green_bg);
+                binding.iv3.setImageResource(R.drawable.gray_bg);
             }else{
 
-                binding.iv1.setImageResource(R.drawable.graybg);
-                binding.iv2.setImageResource(R.drawable.graybg);
-                binding.iv3.setImageResource(R.drawable.greenbg);
+                binding.iv1.setImageResource(R.drawable.gray_bg);
+                binding.iv2.setImageResource(R.drawable.gray_bg);
+                binding.iv3.setImageResource(R.drawable.green_bg);
             }
         }
     }

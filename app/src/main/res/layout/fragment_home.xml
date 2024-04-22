@@ -5,17 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment"
-    android:background="@drawable/backgroundphone"
+    android:background="@drawable/backgr"
     android:orientation="vertical"
     android:padding="22dp">
-
     <TextView
-        android:id="@+id/activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
         android:textAlignment="center"
-        android:background="#C294FF"
+        android:textStyle="bold"
+        android:text="Let's find you a new activity!"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:background="#02BC50"
         android:text="Let's go..."
         android:textSize="25sp"
         android:textColor="#000000"
@@ -29,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
-        android:background="#C294FF"
+        android:background="#02BC50"
         android:text=""
         android:textSize="25sp"
         android:textColor="#000000"
@@ -43,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:textAlignment="center"
-        android:background="#C294FF"
+        android:background="#02BC50"
         android:text=""
         android:textSize="25sp"
         android:textColor="#000000"
@@ -57,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#C294FF"
+        android:background="#02BC50"
         android:text=""
         android:textAlignment="center"
         android:textColor="#000000"
@@ -72,7 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="#C294FF"
+        android:background="#02BC50"
         android:text=""
         android:textAlignment="center"
         android:textColor="#000000"
@@ -84,7 +96,7 @@
 
     <ImageView
         android:id="@+id/zoom_btn"
-        android:layout_width="80dp"
+        android:layout_width="66dp"
         android:layout_height="60dp"
         android:layout_gravity="end"
         android:layout_marginTop="2dp"
@@ -98,11 +110,11 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_go"
-        android:layout_width="100dp"
+        android:layout_width="122dp"
         android:layout_height="wrap_content"
-        app:cornerRadius="25dp"
-        android:backgroundTint="#FF91E7"
-        android:text="What can I do today?"
         android:layout_gravity="center_horizontal"
-        android:textColor="#000000" />
+        android:backgroundTint="#91FFAB"
+        android:text="What can I do today?"
+        android:textColor="#000000"
+        app:cornerRadius="25dp" />
 </LinearLayout>
