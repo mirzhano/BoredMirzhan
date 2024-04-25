@@ -1,4 +1,4 @@
-package com.example.boredlailieva.ui.notifications;
+package com.example.boredmirzhan.ui.notifications;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -6,14 +6,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.boredlailieva.Prefs;
-import com.example.boredlailieva.R;
-import com.example.boredlailieva.databinding.ItemBoardBinding;
+import com.example.boredmirzhan.Prefs;
+import com.example.boredmirzhan.R;
+import com.example.boredmirzhan.databinding.ItemBoardBinding;
 
 public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> {
     ItemBoardBinding binding;

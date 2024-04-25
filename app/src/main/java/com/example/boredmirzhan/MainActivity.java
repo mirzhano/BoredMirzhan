@@ -1,4 +1,4 @@
-package com.example.boredlailieva;
+package com.example.boredmirzhan;
 
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +14,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.boredlailieva.databinding.ActivityMainBinding;
+import com.example.boredmirzhan.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
 

@@ -1,5 +1,5 @@
-package com.example.boredlailieva.remote_data;
-import com.example.boredlailieva.models.ModelDo;
+package com.example.boredmirzhan.remote_data;
+import com.example.boredmirzhan.models.ModelDo;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

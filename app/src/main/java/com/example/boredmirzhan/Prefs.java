@@ -1,4 +1,4 @@
-package com.example.boredlailieva;
+package com.example.boredmirzhan;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package com.example.boredlailieva.ui.notifications;
+package com.example.boredmirzhan.ui.notifications;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -13,9 +13,9 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.boredlailieva.Prefs;
-import com.example.boredlailieva.R;
-import com.example.boredlailieva.databinding.FragmentBoardBinding;
+import com.example.boredmirzhan.Prefs;
+import com.example.boredmirzhan.R;
+import com.example.boredmirzhan.databinding.FragmentBoardBinding;
 
 
 public class BoardFragment extends Fragment {

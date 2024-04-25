@@ -1,4 +1,4 @@
-package com.example.boredlailieva.remote_data;
+package com.example.boredmirzhan.remote_data;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

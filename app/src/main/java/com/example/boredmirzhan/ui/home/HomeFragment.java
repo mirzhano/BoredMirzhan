@@ -1,4 +1,4 @@
-package com.example.boredlailieva.ui.home;
+package com.example.boredmirzhan.ui.home;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -14,9 +14,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.boredlailieva.databinding.FragmentHomeBinding;
-import com.example.boredlailieva.models.ModelDo;
-import com.example.boredlailieva.remote_data.RetrofitBuilder;
+import com.example.boredmirzhan.databinding.FragmentHomeBinding;
+import com.example.boredmirzhan.models.ModelDo;
+import com.example.boredmirzhan.remote_data.RetrofitBuilder;
 
 import retrofit2.Call;
 import retrofit2.Callback;
