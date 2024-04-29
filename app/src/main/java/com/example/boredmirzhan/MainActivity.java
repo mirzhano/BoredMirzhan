@@ -39,25 +39,25 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(binding.navView, navController);
 
         Prefs prefs=new Prefs(this);
-            if(!prefs.isShown()){
-                navController.navigate(R.id.navigation_notifications);
-            }else {
-                navController.navigate(R.id.navigation_home);
-            }
-            navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
-                @Override
-                public void onDestinationChanged(@NonNull NavController navController, @NonNull NavDestination navDestination, @Nullable Bundle bundle) {
-                    ArrayList<Integer> list=new ArrayList<>();
-                    list.add(R.id.navigation_home);
-                    list.add(R.id.navigation_notifications);
+        if(!prefs.isShown()){
+            navController.navigate(R.id.navigation_notifications);
+        }else {
+            navController.navigate(R.id.navigation_home);
+        }
+        navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
+            @Override
+            public void onDestinationChanged(@NonNull NavController navController, @NonNull NavDestination navDestination, @Nullable Bundle bundle) {
+                ArrayList<Integer> list=new ArrayList<>();
+                list.add(R.id.navigation_home);
+                list.add(R.id.navigation_notifications);
 
-                    if(list.contains(navDestination.getId())){
-                        navView.setVisibility(View.GONE);
-                    }else {
-                        navView.setVisibility(View.VISIBLE);
-                    }
+                if(list.contains(navDestination.getId())){
+                    navView.setVisibility(View.GONE);
+                }else {
+                    navView.setVisibility(View.VISIBLE);
                 }
-            });
+            }
+        });
     }
 
 }
