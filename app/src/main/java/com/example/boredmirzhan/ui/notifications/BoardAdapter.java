@@ -19,14 +19,14 @@ public class BoardAdapter extends RecyclerView.Adapter<BoardAdapter.ViewHolder> 
     NavController navController;
 
     private int[] images =new int[]{
-            R.drawable.peopletakecare,
-            R.drawable.hobbies3,
-            R.drawable.hobbies};
+            R.drawable.mood1,
+            R.drawable.pair,
+            R.drawable.man};
 
     private String[] titles =new String[]{
-            "Do you want to help the world?",
-            "Do you want to have fun?",
-            "Do you want to develop yourself?"};
+            "Стрессуешь на работе?",
+            "Хотите интересно провести время вместе?",
+            "Не знаешь чем себя занять?"};
     @NonNull
     @Override
     public BoardAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
